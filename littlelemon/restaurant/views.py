@@ -20,7 +20,7 @@ class BookingViewSet(rest_framework.viewsets.ModelViewSet):
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
 
-class SingleMenuItemView(rest_framework.generics.ListCreateAPIView):
+class SingleMenuItemView(rest_framework.generics.RetrieveUpdateDestroyAPIView):
     queryset = MenuItem
     serializer_class = MenuItemSerializer
 

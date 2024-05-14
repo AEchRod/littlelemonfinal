@@ -8,7 +8,6 @@ class MenuSerializer(serializers.ModelSerializer):
         model = Menu
         fields = ['menu_id', 'title', 'price', 'inventory']
 
-
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
@@ -18,4 +17,4 @@ class MenuItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MenuItem
-        fields = '__all__'
+        fields = ['menuitem_id', 'title', 'price', 'inventory']
